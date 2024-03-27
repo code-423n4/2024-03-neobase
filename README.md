@@ -39,7 +39,7 @@ Checkpoint is called at least once in five years: Curve and FIAT DAO have the as
 Overview
 [ ⭐️ SPONSORS: add info here ]
 
-# Links
+## Links
 Previous audits: https://github.com/code-423n4/2023-08-verwa
 ✅ SCOUTS: If there are multiple report links, please format them in a list.
 Documentation: https://github.com/mkt-market/canto-neofinance-coordinator/blob/master/README.md
