@@ -36,7 +36,7 @@ Checkpoint is called at least once in five years: Curve and FIAT DAO have the as
 
 ✅ SCOUTS: Please format the response above 👆 so its not a wall of text and its readable.
 
-Overview
+# Overview
 [ ⭐️ SPONSORS: add info here ]
 
 ## Links
