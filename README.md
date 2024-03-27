@@ -4,7 +4,7 @@
   - Analysis awards: $900 in CANTO
   - QA awards: $400 in CANTO
   - Gas awards: $400 in CANTO
-  - Judge awards: $3200 in CANTO
+  - Judge awards: $3,200 in CANTO
   - Scout awards: $500 in CANTO
  
 - Join [C4 Discord](https://discord.gg/code4rena) to register
