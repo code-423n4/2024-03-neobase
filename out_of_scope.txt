@@ -1,0 +1,8 @@
+./interface/Turnstile.sol
+./script/Deploy.sol
+./src/test/GaugeController.t.sol
+./src/test/LendingLedger.t.sol
+./src/test/LiquidityGauge.t.sol
+./src/test/VotingEscrow.t.sol
+./src/test/utils/Console.sol
+./src/test/utils/Utilities.sol
