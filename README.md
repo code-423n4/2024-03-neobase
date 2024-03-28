@@ -1,12 +1,14 @@
 # Neobase audit details
 
-- Total Prize Pool: $21,600 in CANTO
-  - HM awards: $16,200 in CANTO
-  - Analysis awards: $900 in CANTO
-  - QA awards: $400 in CANTO
-  - Gas awards: $400 in CANTO
-  - Judge awards: $3,200 in CANTO
-  - Scout awards: $500 in CANTO
+- Total Prize Pool: $21,600
+  - HM awards: $16,200
+  - Analysis awards: $900
+  - QA awards: $400
+  - Gas awards: $400
+  - Judge awards: $3,200
+  - Scout awards: $500
+ 
+❗️Awarding Note for Wardens, Judges, and Lookouts: If you want to claim your awards in $ worth of CANTO, you must follow the steps outlined in this thread; otherwise you'll be paid out in USDC.
 
 - Join [C4 Discord](https://discord.gg/code4rena) to register
 - Submit findings [using the C4 form](https://code4rena.com/contests/2024-03-neobase/submit)
