@@ -40,7 +40,12 @@ The 4naly3er report can be found [here](https://github.com/code-423n4/2024-03-ne
 
 # Overview
 
-[ ⭐️ SPONSORS: add info here ]
+The contracts implement a voting-escrow incentivization model for Canto RWA (Real World Assets) similar to [veCRV](https://curve.readthedocs.io/dao-vecrv.html) with its [liquidity gauge](https://curve.readthedocs.io/dao-gauges.html). Users can lock up CANTO (for five years) in the `VotingEscrow` contract to get veCANTO. They can then vote within `GaugeController` for different markets that are white-listed by governance. Users that provide liquidity within these markets can claim CANTO (that is provided by CANTO governance) from `LendingLedger` according to their share.
+
+For instance, there might be markets X, Y, and Z where Alice, Bob, and Charlie provide liquidity. In lending market X, Alice provides 60% of the liquidity, Bob 30%, and Charlie 10% at a particular epoch (point in time). At this epoch, market X receives 40% of all votes. Therefore, the allocations are:
+- Alice: 40% * 60% = 24% of all CANTO that is allocated for this epoch.
+- Bob: 40% * 30% = 12% of all CANTO that is allocated for this epoch.
+- Charlie: 40% * 10% = 4% of all CANTO that is allocated for this epoch.
 
 ## Links
 
