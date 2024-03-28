@@ -125,7 +125,7 @@ File   | Logic Contracts | Interfaces | Lines | nLines | SLOC |
 
 | Question                                | Answer                       |
 | --------------------------------------- | ---------------------------- |
-| src/LiquidityGauge.sol                           | Should comply with ERC20               |
+| src/LiquidityGauge.sol                  | Should comply with ERC20     |
 
 # Additional context
 
@@ -148,12 +148,12 @@ None, it uses the standard curve VE model (linear)
 ## Running tests
 
 ```bash
-## Either clone with recurse
+# Either clone with recurse
 git clone https://github.com/code-423n4/2024-03-neobase.git --recurse
 cd 2024-03-neobase
-## Or update submodules
+# Or update submodules
 git submodule update --init --recursive
-## To run tests
+# To run tests
 forge test
 # To run code coverage
 forge coverage --ir-minimum
@@ -161,8 +161,13 @@ forge coverage --ir-minimum
 forge test --gas-report
 ```
 
-✅ SCOUTS: Add a screenshot of your terminal showing the gas report
-✅ SCOUTS: Add a screenshot of your terminal showing the test coverage
+**Gas report**
+
+![](https://github.com/code-423n4/2024-03-neobase/assets/47150934/072c2d9c-6e05-4475-afc5-54fe7444aea1")
+
+**Test coverage (inaccurate due to --ir-minimum)**
+
+![](https://github.com/code-423n4/2024-03-neobase/assets/47150934/7fe07d56-1154-4ff9-b192-d2de24a5dc74")
 
 ## Miscellaneous
 
