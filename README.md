@@ -63,13 +63,13 @@ For instance, there might be markets X, Y, and Z where Alice, Bob, and Charlie p
 
 ### Files in scope
 
-File   | Logic Contracts | Interfaces | Lines | nLines | SLOC |
------- | --------------- | ---------- | ----- | ------ | ----- |
-/src/GaugeController.sol | 1 | **** | 495 | 495 | 330 |
-/src/LendingLedger.sol | 1 | **** | 188 | 176 | 136 |
-/src/LiquidityGauge.sol | 1 | 1 | 59 | 52 | 44 |
-/src/VotingEscrow.sol | 1 | **** | 564 | 552 | 385 |
-**Totals** | **4** | **1** | **1306**  | **1275** | **895** |
+File                     | Logic Contracts | Interfaces | Lines    | nLines   | SLOC
+-------------------------|-----------------|------------|----------|----------|--------
+/src/GaugeController.sol | 1               | ****       | 495      | 495      | 330
+/src/LendingLedger.sol   | 1               | ****       | 188      | 176      | 136
+/src/LiquidityGauge.sol  | 1               | 1          | 59       | 52       | 44
+/src/VotingEscrow.sol    | 1               | ****       | 564      | 552      | 385
+**Totals**               | **4**           | **1**      | **1306** | **1275** | **895**
 
 ## Out of scope
 *See [out_of_scope.txt](https://github.com/code-423n4/2024-03-neobase/blob/main/out_of_scope.txt)*
@@ -89,50 +89,50 @@ File   | Logic Contracts | Interfaces | Lines | nLines | SLOC |
 
 ### General questions
 
-| Question                                | Answer                       |
-| --------------------------------------- | ---------------------------- |
-| ERC20 used by the protocol              |       any except non-standard ERC20 tokens (eg, rebase mechanism)             |
-| Test coverage                           | 85.15% |
-| ERC721 used  by the protocol            |            None              |
-| ERC777 used by the protocol             |           None                |
-| ERC1155 used by the protocol            |              None            |
-| Chains the protocol will be deployed on | OtherCanto (chainId: 7700)  |
+| Question                                | Answer                                                      |
+|-----------------------------------------|-------------------------------------------------------------|
+| ERC20 used by the protocol              | any except non-standard ERC20 tokens (eg, rebase mechanism) |
+| Test coverage                           | 85.15%                                                      |
+| ERC721 used  by the protocol            | None                                                        |
+| ERC777 used by the protocol             | None                                                        |
+| ERC1155 used by the protocol            | None                                                        |
+| Chains the protocol will be deployed on | Canto (chainId: 7700)                                       |
 
 ### ERC20 token behaviors in scope
 
 | Question                                                                                                                                                   | Answer |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| [Missing return values](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#missing-return-values)                                                      |   No  |
-| [Fee on transfer](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#fee-on-transfer)                                                                  |  No  |
-| [Balance changes outside of transfers](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#balance-modifications-outside-of-transfers-rebasingairdrops) | No    |
-| [Upgradeability](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#upgradable-tokens)                                                                 |   Yes  |
-| [Flash minting](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#flash-mintable-tokens)                                                              | No    |
-| [Pausability](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#pausable-tokens)                                                                      | No    |
-| [Approval race protections](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#approval-race-protections)                                              | No    |
-| [Revert on approval to zero address](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-approval-to-zero-address)                            | No    |
-| [Revert on zero value approvals](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-zero-value-approvals)                                    | No    |
-| [Revert on zero value transfers](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-zero-value-transfers)                                    | No    |
-| [Revert on transfer to the zero address](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-transfer-to-the-zero-address)                    | No    |
-| [Revert on large approvals and/or transfers](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-large-approvals--transfers)                  | No    |
-| [Doesn't revert on failure](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#no-revert-on-failure)                                                   |  No   |
-| [Multiple token addresses](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-zero-value-transfers)                                          | No    |
-| [Low decimals ( < 6)](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#low-decimals)                                                                 |   No  |
-| [High decimals ( > 18)](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#high-decimals)                                                              | No    |
-| [Blocklists](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#tokens-with-blocklists)                                                                | No    |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
+| [Missing return values](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#missing-return-values)                                                      | No     |
+| [Fee on transfer](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#fee-on-transfer)                                                                  | No     |
+| [Balance changes outside of transfers](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#balance-modifications-outside-of-transfers-rebasingairdrops) | No     |
+| [Upgradeability](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#upgradable-tokens)                                                                 | Yes    |
+| [Flash minting](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#flash-mintable-tokens)                                                              | No     |
+| [Pausability](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#pausable-tokens)                                                                      | No     |
+| [Approval race protections](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#approval-race-protections)                                              | No     |
+| [Revert on approval to zero address](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-approval-to-zero-address)                            | No     |
+| [Revert on zero value approvals](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-zero-value-approvals)                                    | No     |
+| [Revert on zero value transfers](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-zero-value-transfers)                                    | No     |
+| [Revert on transfer to the zero address](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-transfer-to-the-zero-address)                    | No     |
+| [Revert on large approvals and/or transfers](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-large-approvals--transfers)                  | No     |
+| [Doesn't revert on failure](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#no-revert-on-failure)                                                   | No     |
+| [Multiple token addresses](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#revert-on-zero-value-transfers)                                          | No     |
+| [Low decimals ( < 6)](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#low-decimals)                                                                 | No     |
+| [High decimals ( > 18)](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#high-decimals)                                                              | No     |
+| [Blocklists](https://github.com/d-xo/weird-erc20?tab=readme-ov-file#tokens-with-blocklists)                                                                | No     |
 
 ### External integrations (e.g., Uniswap) behavior in scope
 
 | Question                                                  | Answer |
-| --------------------------------------------------------- | ------ |
-| Enabling/disabling fees (e.g. Blur disables/enables fees) | No   |
-| Pausability (e.g. Uniswap pool gets paused)               |  No   |
-| Upgradeability (e.g. Uniswap gets upgraded)               |   No  |
+|-----------------------------------------------------------|--------|
+| Enabling/disabling fees (e.g. Blur disables/enables fees) | No     |
+| Pausability (e.g. Uniswap pool gets paused)               | No     |
+| Upgradeability (e.g. Uniswap gets upgraded)               | No     |
 
 ### EIP compliance checklist
 
-| Question                                | Answer                       |
-| --------------------------------------- | ---------------------------- |
-| src/LiquidityGauge.sol                  | Should comply with ERC20     |
+| Question               | Answer                   |
+|------------------------|--------------------------|
+| src/LiquidityGauge.sol | Should comply with ERC20 |
 
 # Additional context
 
